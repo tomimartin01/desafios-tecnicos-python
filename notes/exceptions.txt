@@ -1,0 +1,9 @@
+syntaxis error occurs when the parser detects a syntactically incorrect statement
+exception is an error when is executed. some exceptions are 
+
+TypeError related with the data types
+ImportError realted when you import a non existing module 
+NameError when you uses variables that do not exists
+FileNotFoundError
+ValueError try to access a value that do not exists
+IndexError try to access a index (iterator) that do not exists

@@ -1,0 +1,31 @@
+List: is a collection type data type that is ordered mutable, and that allows duplicate elements.
+List allows different data type like integer, boolean, strings
+lista = list() crea una lista vacia
+lista = [] create an empty list
+item = lista[3] access an element of the list
+item = lista[-1] access the last element
+for i in lista iterate over the list
+for i in range(0,10) iterate over the list with a count (i)
+if 'banana' in lista check if  an item is in the list
+len(lista) check how many items do you hacve in the list
+lista.append('apple') append an element to the end of the list
+lista.insert(1, 'apple') insert an element at the position 1 of the list
+lista.index('p') returns the index of an element
+lista.pop() remove the last element
+lista.pop('apple') remove the apple element
+lista.clear() remove all the elements
+lista.reverse() reverse all the list
+lista.sort() sort the list 
+new_lista = sorted(lista) created a new sorted list from lista
+mylist = [0] * 5 creates a new list with 5 elements zeros
+lista + new_lista conquer the lists
+a = lista[1:5] creates a new list with four elements, the zero element is the first elements of lista and the last element is the fifth of lista
+a = lista[:5] creates a new list with five elements, start at the beginning of lista
+a = lista[:5] creates a new list with five elements, start at the end of lista
+a = lista[::1] creates a new list from the beginning of list to the end from 1 to one
+a = lista[::1] creates a new list from the beginning of list to the end with a step of 2 [1,3,5]
+a = lista[::-1] creates a new list reverse, similar to lista.reverse()
+lista_org = lista creates a lista but if i modify lista lista_org modifies too. (puntero)
+lista_org = lista.copy() creates a simple copy
+lista_org = list[:] makes a ccopy (similar to the first copy)
+b = [i*i for i in lista] list comprehension

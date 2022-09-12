@@ -1,0 +1,44 @@
+Dictionary is a collection data type that is unordenered and mutable. it consists of a collection of key value pairs
+Each ket value pair maps the keys to itas associated value.
+
+Create a dictionary
+mydict = {} create a empty dict
+mydict = {"name": "max", "age": 28} create a dict
+mydict = dict(name = 'max', age=27) create a dict
+
+Modify a dictionary
+age = mydict['age'] access an element
+mydict['last name'] = martin add or modify an elements after creation, dict is mutable
+del mydict['last name'] delete a key value
+mydict.pop('age') delete a key value
+
+Check if a key is on a dictionary
+if 'name' in mydict check if a key is in a dictionary and print
+    print(mydict['name'])
+try:        check if a key is in a dictionary and print
+    print(mydict['name'])
+except:
+    print('error')
+
+Iterate a dictionary
+for key in mydict: 
+    print(mydict[key])
+
+for value in mydict.values() 
+    print(value)
+
+for key in mydict.keys() 
+    print(mydict[key])
+
+for key,value in mydict.items() 
+    print(key, value)
+
+Copy the dictionary
+mydict_copy = mydict same problem that list, point the same part of the memory, if mydict changes, mydict_copy too
+mydict_copy = mydict.copy() no point the same part of the memory
+mydict_copy = dict(mydict) no point the same part of the memory
+
+Merge dictionaries
+mydict.update(my_dict_2)
+
+for keys you can use any inmutable type like numbers, string, tuples but can not use list or dictionary, they are mutable, it can change after it creation

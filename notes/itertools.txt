@@ -1,0 +1,45 @@
+The inner tools module is a collection of tools for handling iterators. Iterators are data types that can be used in a for loop, like lists
+
+product will compute the cartesian product of the input iterables
+from itertools import product
+a = [1,2]
+b = [3,4]
+prod = product(a,b) 
+print(list(prod)) [(1,3),(1,4),(2,3),(2,4)]
+
+permutations create all the possible orders of the iterator 
+from itertools import permutations
+a = [1,2,3]
+prod = permutations(a,b) 
+print(list(prod)) [(1,2,3),(2,3,1),(2,1,3),(1,3,2)..]
+
+combinations create all the possible combinations with a specific lenght
+
+accumulation sums the numbers of the iterator 
+
+groupby order by a condition
+
+from itertools import groupby 
+
+def smaller_than_3(x):
+     return x < 3
+
+a = [1,2,3,4]
+
+group_obj = groupby(a, key = lamba x: x<3 )
+group_obj = groupby(a, key = smaller_than_3)
+for key, value in group_obj:
+    print(key, list(value)) True [1,2]  False [3,4]
+
+
+count creates a inf count from a started num 
+for i in count(10)
+
+cycle creates a cycle of a iterator until a condition breaks it
+a = [1,2,3]
+for i in cicle(a)
+
+repeat a number 
+
+for i in repeat(1)
+for i in repeat(1,4) repeats the 1 four times

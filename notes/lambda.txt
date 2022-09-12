@@ -1,0 +1,34 @@
+Lambda function is a small one line anonymous function that is defined without a name
+
+Lambda are used for build simple functions thata are use only once in the doce or as an argument to another higher functions, functions that 
+take in other functions as arguments like sorted, map, filter and reduce.
+syntaxis
+
+lambda arguments: expression
+add10 = lambda x: x+10
+mult = x,y: x+y
+
+call the function
+
+add10(5)
+
+sorted a list of tuple by the second element
+
+points2D_sorted = sorted(points2D , key = lambda x: x[1])
+
+map function, modify all the elements of a list
+
+b = map(lambda x: x*2, a) it returns a list, you have to convert to a list with list(b)
+print(list(b))
+b = [x*2 for x in a] same that before but easier
+
+Filter return all the elements that are True
+
+b = filter(lambda x: x%2==0, a) it returns a list, you have to convert to a list with list(b)
+print(list(b))
+b = [x for x in a if x%2==0]
+
+Reduce applies a function to all the elements of a iterator and returns one element, you have to import the function
+
+from functools import reduce
+prod_a = reduce(lambda x,y: x*y, a) returns a int with the prod of all the elements

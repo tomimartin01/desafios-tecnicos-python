@@ -1,0 +1,30 @@
+json is JavaScript Object Notation. It's a lightweight data format that is used for data exchange.
+Convert python to json is called encoding or serialization.
+There is a library called json import json
+
+Encoding
+personJSON = json.dumps(person)
+personJSON = json.dumps(person, indent=4) for the format and see down
+personJSON = json.dumps(person, indent=4, separators=(';', ' =')) change the separators in the json, the first arg is the last separators
+personJSON = json.dumps(person, indent=4, sort_keys =True) ordered the key json by alphabetic
+
+
+Convert or dump into a file
+
+with open('person.json','w') as file:
+    json.dump(person, file)
+
+with open('person.json','w') as file:
+    json.dump(person, file, indent=4)
+
+convert json to python, decoding or deserialization
+
+person = json.loads(personJSON)
+
+load from a json file
+with open('person.json','r') as file:
+    person = json.load(file)
+
+
+can not convert a object to json, first you have to convert to a dict
+

@@ -1,0 +1,25 @@
+Generators are functions that returns an object that can be iterated over, they generate the items inside the object lazily
+they are more memory efficient
+
+syntaxis
+
+def mygenerator():
+    yield 1
+    yield 2
+    yield 3
+
+g = mygenerator()
+
+g is an generator object, you can iterate g with a for and get 1 2 3
+
+value = next(g) return the value of the first yield, to print the second value add another next 
+
+generator comprenhension 
+
+mygenerator = (i for i in range(10) if i%2==0)
+return a object that can be iterates with a simple for or can convert to a list
+for i in my mygenerator:
+    print(i)
+
+g = list(mygenerator)
+

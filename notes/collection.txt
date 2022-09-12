@@ -1,0 +1,38 @@
+Collections module implements special container data types and provides alternatives with some additional funnctionality compared 
+to the general Bert and containers like dict, list and tuples.
+
+Counter, namedtuple, OrderedDict, defaultdict, deque
+
+Counter creates a dictionary with the key of char without duplicates and the values is how many times appears the char
+first you have to import the package
+from collections import Counter
+a ='aaaaabbcc'
+count = Counter()
+print(count) Counter({'a':5,'b':2,'c':2})
+print(count.most_common(1)) returns a tuple with the key as the element and the value as how many times it appears
+print(count.most_common(1)) returns a list of 2 tuple with the key as the element and the value as how many times it appears
+print(count.elements()) get a list with all the elements 
+
+namedtuple similar to create an object
+from collections import namedtuple
+Point = namedtuple('Point','x,y')
+pt = Point(1,-4) Point(x=1, y=-4)
+print(pt, pt.x,pt.y)
+
+
+OrderedDict similar to a dict but remebers the ordered that the elements were inserted
+In python 3.7 the dict can remember the ordered, so no one uses it
+
+defaultdict similar to a dict but the only difference is that it have a default valueand the dictionary have a data type 
+
+deque is a double ended queue, can add or remove elements from both sides.
+from collections import deque
+d = deque()
+d.append(1)
+d.append(2)
+d.appendleft(3)
+d.pop()
+d.popleft()
+d.clear()
+d.extend(4,5,6) add multiple values
+d.extendleft(4,5,6)

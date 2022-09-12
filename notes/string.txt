@@ -1,0 +1,92 @@
+String is a ordered and immutable collection data type that is used for text representation
+
+Create a string 
+
+mystring = ''
+mystring = ""
+mystring = I\'m programmer'
+mystring = "I'm programmer"
+mystring = """ hello        multiline docs, you dont need the \n
+world""" 
+mystring = """ hello\        in the same line
+world"""
+
+Get a only char
+
+char = mystring[0]
+char = mystring[-1]
+mystring[0]= 'm' ERROR can not change string, inmutable
+
+
+Slicing string
+
+substring = mystring[1:5]
+substring = mystring[::2] takes every second char
+substring = mystring[::-1] reverse string
+
+Concatenate string
+
+newstring = mystring + yourstring
+
+Iterate string 
+
+for i in mystring  iterate each char of the string
+
+Check if a char is in the string
+
+if 'all' in mystring
+
+Remove whitespace from beginnig and end of a string
+
+mystring = mystring.strip()
+
+Convert to uppercase or lowercase
+
+mystring = mystring.upper()
+mystring = mystring.lower()
+
+Check if the string start or ends with a substring
+
+mystring.startswith('he') returns boolean
+mystring.endswith('he') returns boolean
+
+Find the index of a char
+
+mystring.index('e') returns integer (index) if do not exists return -1
+
+Count a char in the string
+mystring.count('e') return a integer
+
+Replace a char o substring
+
+mystring = mystring.replace('world','galaxy')
+
+Convert list to string or viceverse
+string to list
+mystring = mystring.split(" ") return a list with the words 
+mystring = mystring.split(",") return a list with the words 
+
+list to string
+
+newstring = ' '.join(mylist)
+
+Format string
+
+var = 'tom'
+mystring = 'the variable is %s' % var
+var2=2.1212121
+mystring = 'the variable is %.2f' % var
+
+mystring = 'the variable is {}'.format(var)
+mystring = 'the variable is {:.2f}'.format(var2) 
+
+mystring = f'the variable is {var}'
+mystring = f'the variable is {var2}'
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+tuple is a collection data type that is ordered and inmutable. It is similar to list with a main  difference
+to the tuple cannot be change after the creation.
+A tuple is used for objects that belong together.
+mytuple = ('max', '28','Boston') parenthesis are optional
+mytuple = ('max') this is not a tuple, is a string
+mytuple = ('max',) this is a tuple
+mytuple = tuple(['max',]) create a tuple
+mytuple = ()) create a empty tuple
+mytuple[1] access the first element of a tuple 
+mytuple[-1] access the last element of a tuple 
+mytuple[1] = 'josh' ERROR the tuple is inmutable can not assign a value
+for i in mytuple iterate the tuple, similar to list 
+if 'banana' in mytuple check if  an item is in the tuple
+len(mytuple) check how many items do you hacve in the tuple
+my_tuple.count('o') count the quantity of element 'o' in the tuple 
+mytuple.index('p') returns the index of an element in the tuple, error if not an element
+my_list = list(mytuple) convert a tuple into list, it works viceverse too
+a = mytuple[1:5] creates a new tuple with four elements, the zero element is the first elements of mytuple and the last element is the fifth of mytuple (slicing)
+a = mytuple[:5] creates a new tuple with five elements, start at the beginning of mytuple
+a = mytuple[:5] creates a new tuple with five elements, start at the end of mytuple
+a = mytuple[::1] creates a new tuple from the beginning of tuple to the end from 1 to one
+a = mytuple[::1] creates a new tuple from the beginning of tuple to the end with a step of 2 [1,3,5]
+a = mytuple[::-1] creates a new tuple reverse, similar to mytuple.reverse()
+
+mytuple = "max",26,"boston"
+name, age, city = mytuple  unpacking a tuple 
+
+mytuple = (1,2,3,4,5)
+i1, *i2, i3 = mytuple  i2= [2,3,4] i1 =1 i3=5
+
+sys.getsizeof(mytuple) number of bytes
+
+A tuple is smaller than a list, is more efficient work with tuple when you are working with a large data
+Also is more efficient iterates a tuple than a list

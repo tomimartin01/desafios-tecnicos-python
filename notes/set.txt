@@ -1,0 +1,51 @@
+Sets is a collection data type that is unordenered and mutable but do not allow duplicates elements (difference between tuple/lists)
+It admits list, string, int, float
+
+Create a Sets
+myset = set() empty set
+myset = {1,2,3}
+myset = {'hello'} ---> {'e','l','h','o'}
+
+Modify a set
+
+myset.add(4) add an element
+myset.remove(3) remove an element, if the element doesnt exist raises an error
+myset.discard(3) remove an element, if the element doesnt exist NO raises an error
+myset.clear() delete all elements but no the set
+myset.pop() delete an arbitrary element
+
+Iterate a set
+
+for i in mytset:
+    print(i)
+
+Check if an element is in the set
+ if 1 in myset
+
+Union of sets
+union_set = myset.union(yourset) without duplication
+
+Intersection of sets
+int_set = myset.intersection(yourset) without duplication
+
+Difference of sets
+diff = myset.difference(yourset) without duplication, it depends on the set you make the difference
+
+Symmetric difference of sets (opposite to difference)
+diff = myset.symmetric_difference(yourset) without duplication, it depends on the set you make the difference
+
+Subset of sets (subconjunto)
+diff = myset.issubset(yourset) without duplication, it depends on the set you make the difference, return boolean
+
+Superset of sets (subconjunto)
+diff = myset.issuperset(yourset) without duplication, it depends on the set you make the difference, return boolean
+
+copy set
+
+mydict = yourdict same point problem
+mydict = yourdict.copy()
+mydict = set(yourdict)
+
+Frozen set is an inmutable version of a set
+
+a = frozenset([1,22,34,4])
